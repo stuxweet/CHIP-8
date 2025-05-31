@@ -67,7 +67,7 @@ void Chip8::loadROM(const std::string& filename)
 
 	fseek(rom, 0, SEEK_END); // move to the end of the file
 	long size = ftell(rom);  // get the size
-	rewind(rom);			 // rewind to the beginning
+	rewind(rom);             // rewind to the beginning
 
 	if (size > 4096 - 512) { // 4096 is the total memory size, 512 is the reserved space for the interpreter
 		std::cerr << "ROM size exceeds memory limit." << std::endl;
