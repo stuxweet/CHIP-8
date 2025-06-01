@@ -2,6 +2,7 @@
 
 #include <cstdint>
 #include <string>
+#include <SDL3/SDL.h>
 
 class Chip8
 {
@@ -25,6 +26,7 @@ public:
 
 	void loadROM(const std::string& filename);
 	void emulateCycle();
+	void renderDisplay(SDL_Renderer* renderer, SDL_Texture* texture, const uint8_t* displayBuffer);
 
 	Chip8();
 	~Chip8();
