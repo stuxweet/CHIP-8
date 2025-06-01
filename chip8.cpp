@@ -87,6 +87,7 @@ void Chip8::loadROM(const std::string& filename)
 	fclose(rom);
 }
 
+
 void Chip8::emulateCycle() {
 	opcode = memory[pc] << 8 | memory[pc + 1]; // fetch opcode
 
@@ -220,7 +221,7 @@ void Chip8::emulateCycle() {
 			break;
 		case 0xD000: // DXYN; DRW Vx, Vy, nibble
 			printf("Drawing sprite at V%X, V%X with %d bytes\n", x, y, n);
-
+			// é aqui que o filho chora e a mãe não vê
 			break;
 		default:
 			// Unknown opcode
