@@ -1,4 +1,10 @@
-# CHIP-8
+# chipchapa
+<div align="center">
+<img src="./images/chipichapapink.jpg" width="400px" alt="Texto alternativo" />
+
+<span style="font-size:10px">chipi chipi chapa ~</span>
+</div>
+
 A CHIP-8 interpreter project I'm tinkering with when adulting isn't eating all my time.
 
 ***
